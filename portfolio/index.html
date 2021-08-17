@@ -7,6 +7,22 @@
 <html lang="en">
   <head>
     <title>Max's Portfolio</title>
+    <style>
+      body {
+        background-color: lightblue;
+      }
+      header,
+      footer {
+        background-color: indianred;
+        color: white;
+      }
+      .border {
+        border: thick solid blue;
+      }
+      #experience {
+        border: thick dashed orange;
+      }
+    </style>
   </head>
 
   <body>
@@ -14,18 +30,18 @@
       <h1>Portfolio for Max Manayan</h1>
     </header>
 
-    <hr style="border: thin dotted red" />
-    <nav>
+    <nav class="border">
+      <hr style="border: thin dotted red" />
       <!-- We need to add links to projects.html, contact.html, and testimonials.html -->
       <p><a href="">Home</a></p>
       <p><a href="projects.html">Projects</a></p>
       <p><a href="contact.html">Contact</a></p>
       <p><a href="testimonials.html">Testimonials</a></p>
+      <hr style="width: 50%; border: 2px solid blueviolet" />
     </nav>
-    <hr style="width: 50%; border: 2px solid blueviolet" />
 
     <section>
-      <article id="about-me">
+      <article class="border" id="about-me">
         <h2><em>About Me</em></h2>
         <img src="images/max.jpeg" alt="A photo of Max." style="width: 350px" />
         <p>
@@ -40,7 +56,7 @@
           metus, nec molestie magna.
         </p>
       </article>
-      <article id="past-experiences">
+      <article id="experience">
         <h2><em>Past Experiences</em></h2>
         <img
           src="images/teaching.jpeg"
