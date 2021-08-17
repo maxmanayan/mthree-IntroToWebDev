@@ -7,10 +7,34 @@
 <html lang="en">
   <head>
     <title>Max's Portfolio</title>
-    <link href="./styles/teststyles.css" rel="stylesheet" type="text/css" />
+    <link href="./styles/main.css" rel="stylesheet" type="text/css" />
     <style>
-      header {
-        background-color: darkgray;
+      caption {
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+      }
+      table {
+        width: 90%;
+        margin: auto;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid #0d1f2d;
+        border-collapse: collapse;
+        padding: 5px 10px;
+      }
+      tr {
+        height: 30px;
+      }
+      th {
+        background-color: #546a7b;
+        color: #f2eded;
+      }
+
+      tbody tr:nth-child(odd) {
+        background-color: lightgray;
       }
     </style>
   </head>
@@ -21,13 +45,10 @@
     </header>
 
     <nav class="border">
-      <hr style="border: thin dotted red" />
-      <!-- We need to add links to projects.html, contact.html, and testimonials.html -->
       <p><a href="">Home</a></p>
       <p><a href="projects.html">Projects</a></p>
       <p><a href="contact.html">Contact</a></p>
       <p><a href="testimonials.html">Testimonials</a></p>
-      <hr style="width: 50%; border: 2px solid blueviolet" />
     </nav>
 
     <section>
@@ -57,26 +78,30 @@
           <caption>
             Employment History
           </caption>
-          <tr>
-            <th>Years of Employment</th>
-            <th>Title</th>
-            <th>Company</th>
-          </tr>
-          <tr>
-            <td>2021</td>
-            <td>Student</td>
-            <td>DevPoint Labs</td>
-          </tr>
-          <tr>
-            <td>2019-2020</td>
-            <td>Teacher</td>
-            <td>MPOLY Foreign Language Academy</td>
-          </tr>
-          <tr>
-            <td>2015-2019</td>
-            <td>Student</td>
-            <td>University of Alabama</td>
-          </tr>
+          <thead>
+            <tr>
+              <th>Years of Employment</th>
+              <th>Title</th>
+              <th>Company</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2021</td>
+              <td>Student</td>
+              <td>DevPoint Labs</td>
+            </tr>
+            <tr>
+              <td>2019-2020</td>
+              <td>Teacher</td>
+              <td>MPOLY Foreign Language Academy</td>
+            </tr>
+            <tr>
+              <td>2015-2019</td>
+              <td>Student</td>
+              <td>University of Alabama</td>
+            </tr>
+          </tbody>
         </table>
       </article>
       <article id="hobbies">
@@ -117,8 +142,7 @@
       </article>
     </section>
 
-    <footer style="background-color: fuchsia">
-      <hr />
+    <footer>
       <p>&copy; 2021 Max Manayan. All rights reserved.</p>
     </footer>
   </body>
