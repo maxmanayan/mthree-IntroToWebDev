@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Internal CSS Style Sheet</title>
+    <style>
+      /* Element Selectors */
+      body {
+        color: darkviolet;
+      }
+      li {
+        border-bottom: 1px dashed black;
+      }
+      /* ID Selectors */
+      #product1,
+      #product3 {
+        color: blue;
+      }
+      #product2 {
+        border: 3px red dashed;
+      }
+      /* Class Selectors */
+      /* .warning {
+        display: none;
+      } */
+      .warning {
+        font-weight: bold;
+        color: red;
+      }
+      /* Combination of Selectors */
+      div.warning {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <p>This is a paragraph.</p>
+      <p>This is a second paragraph.</p>
+    </section>
+
+    <section>
+      <ul>
+        <li>Sam</li>
+        <li>John</li>
+        <li>Chris</li>
+      </ul>
+    </section>
+
+    <section>
+      <div id="product1">
+        <h2>Awesome Product</h2>
+        <p>
+          Pasta ipsum dolor sit amet sagne 'ncannulate bucatini tuffoli bavette
+          penne. Tuffoli pastina farfalline linguine campanelle garganelli
+          lagane scialatelli pappardelle elicoidali ditalini. Quadrefiore
+          orecchiette croxetti spiralini strozzapreti garganelli fettucelle.
+        </p>
+      </div>
+      <div id="product2">
+        <h2>More Awesome Product</h2>
+        <p>
+          Pasta ipsum dolor sit amet sagne 'ncannulate bucatini tuffoli bavette
+          penne. Tuffoli pastina farfalline linguine campanelle garganelli
+          lagane scialatelli pappardelle elicoidali ditalini. Quadrefiore
+          orecchiette croxetti spiralini strozzapreti garganelli fettucelle.
+        </p>
+      </div>
+      <div id="product3">
+        <h2>Most Awesome Product</h2>
+        <p>
+          Pasta ipsum dolor sit amet sagne 'ncannulate bucatini tuffoli bavette
+          penne. Tuffoli pastina farfalline linguine campanelle garganelli
+          lagane scialatelli pappardelle elicoidali ditalini. Quadrefiore
+          orecchiette croxetti spiralini strozzapreti garganelli fettucelle.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="warning">
+        <p>The following errors occurred:</p>
+      </div>
+      <p class="warning">First Name is required.</p>
+      <label for="firstName">First Name</label>
+      <input type="textbox" name="firstName" />
+      <p class="warning">Last Name is required.</p>
+      <label for="lastName">Last Name</label>
+      <input type="textbox" name="lastName" />
+    </section>
+  </body>
+</html>
