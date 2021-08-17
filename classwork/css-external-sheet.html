@@ -5,14 +5,22 @@
     <link rel="stylesheet" type="text/css" href="css-external-sheet.css" />
   </head>
   <body>
-    <p style="color: red; font-weight: bold">
-      This is an example of inline styling. Inline styling takes precedence over
-      internal and external style sheets.
-    </p>
-    <p>This is styled by the external style sheet.</p>
-    <p>This is styled by the external style sheet.</p>
-    <p class="unique-p">
-      This is styled by the external style sheet and has a unique class.
-    </p>
+    <section>
+      <p style="color: red; font-weight: bold">
+        This is an example of inline styling. Inline styling takes precedence
+        over internal and external style sheets.
+      </p>
+      <p>This is styled by the external style sheet.</p>
+      <p>This is styled by the external style sheet.</p>
+      <p class="unique-p">
+        This is styled by the external style sheet and has a unique class.
+      </p>
+    </section>
+
+    <section>
+      <div id="outside">
+        <button id="inside">I'm a button!</button>
+      </div>
+    </section>
   </body>
 </html>
