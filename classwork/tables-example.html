@@ -2,33 +2,66 @@
 <html lang="en">
   <head>
     <title>Tables in HTML</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid red;
+        border-collapse: collapse;
+        padding: 5px 0 5px 10px;
+      }
+      table {
+        width: 100%;
+      }
+      th {
+        height: 25px;
+      }
+      tfoot td {
+        text-align: center;
+      }
+      tbody tr:nth-child(even) {
+        background-color: lightcyan;
+      }
+      tbody tr:nth-child(odd) {
+        background-color: lemonchiffon;
+      }
+    </style>
   </head>
   <body>
-    <table border="1" width="90%">
+    <table>
       <caption>
         Contact Information
       </caption>
-      <tr bgcolor="palegreen">
-        <th>Category</th>
-        <th colspan="2">Name</th>
-        <th>Phone</th>
-      </tr>
-      <tr>
-        <td rowspan="3">Friends</td>
-        <td>John</td>
-        <td>Doe</td>
-        <td>555-1212</td>
-      </tr>
-      <tr>
-        <td>Sally</td>
-        <td>Smith</td>
-        <td>555-1123</td>
-      </tr>
-      <tr>
-        <td>Sam</td>
-        <td>Jones</td>
-        <td>555-4321</td>
-      </tr>
+      <thead>
+        <tr bgcolor="palegreen">
+          <th>Category</th>
+          <th colspan="2">Name</th>
+          <th>Phone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="3">Friends</td>
+          <td>John</td>
+          <td>Doe</td>
+          <td>555-1212</td>
+        </tr>
+        <tr>
+          <td>Sally</td>
+          <td>Smith</td>
+          <td>555-1123</td>
+        </tr>
+        <tr>
+          <td>Sam</td>
+          <td>Jones</td>
+          <td>555-4321</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">Table Footer Text</td>
+        </tr>
+      </tfoot>
     </table>
   </body>
 </html>
