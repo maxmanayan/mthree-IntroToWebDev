@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CODE_ALONG: Display Evens</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <style>
+      .form-label {
+        display: flex;
+        justify-content: flex-end;
+        font-weight: bold;
+      }
+      .btn-container {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+      }
+      #error-message-numEnd {
+        color: red;
+        display: none;
+      }
+      #error-message-step {
+        color: red;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>CODE-ALONG: Display Evens</h1>
+
+      <form
+        id="stepForm"
+        class="needs-validation"
+        onsubmit="return displayEvens()"
+        novalidate
+      >
+        <div class="form-row">
+          <div class="form-group col-sm-3">
+            <label for="numStart" class="form-label">Starting Number</label>
+          </div>
+          <div class="form-group col-sm-3">
+            <input id="numStart" type="number" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-sm-3">
+            <label for="numEnd" class="form-label">Ending Number</label>
+          </div>
+          <div class="form-group col-sm-3">
+            <input id="numEnd" type="number" />
+          </div>
+          <div class="form-group col-sm-6">
+            <span id="error-message-numEnd"
+              >Ending number must be greater than starting number!</span
+            >
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-sm-3">
+            <label for="step" class="form-label">Step</label>
+          </div>
+          <div class="form-group col-sm-3">
+            <input id="step" type="number" />
+          </div>
+          <div class="form-group col-sm-6">
+            <span id="error-message-step">Step must be positive!</span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="btn-container">
+            <button
+              type="submit"
+              id="displayButton"
+              class="btn btn-secondary"
+              style="padding: 5px 20px"
+            >
+              Display Evens
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <div id="result" style="display: none">
+        <h3>
+          Here are the even numbers between <span id="resNumStart"></span> and
+          <span id="resNumEnd"></span> by <span id="resStep"></span>'s:
+        </h3>
+        <h3 id="resNums"></h3>
+      </div>
+    </div>
+
+    <script src="displayEvens.js"></script>
+  </body>
+</html>
