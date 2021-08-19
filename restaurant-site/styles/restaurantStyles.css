@@ -7,8 +7,8 @@ body {
 body h1 {
   color: #a5be56;
   font-family: "Palette Mosaic", cursive;
-  font-size: 72px;
-  font-weight: bold;
+  font-size: 92px;
+  font-weight: bolder;
 }
 
 body p {
@@ -18,7 +18,7 @@ body p {
 
 body header {
   text-align: center;
-  background-color: #f7da83d3;
+  background-color: #f1cd66;
   padding-bottom: 10px;
   margin-bottom: -10px;
   max-width: 1440px;
@@ -26,9 +26,8 @@ body header {
 }
 
 nav {
-  border-top: 1px solid #0c1003;
-  border-bottom: 1px solid #0c1003;
-  background-color: #f7da83d3;
+  border-top: 10px solid #a5be56;
+  background-color: #f1cd66;
   height: 70px;
   max-width: 1440px;
   margin: auto;
@@ -80,10 +79,10 @@ footer {
 }
 
 #page-header {
-  padding: 1em 5px 0 5px;
+  padding: 1em 1em 0 1em;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #0c1003;
+  border-bottom: 10px solid #a5be56;
 }
 
 #page-header p,
