@@ -1,3 +1,25 @@
 #beverages-table {
-  background-color: red;
+  width: 50%;
+  margin: 20px auto;
+}
+
+#beverages-table th,
+td {
+  border: 1px solid #0c1003;
+  border-collapse: collapse;
+  padding: 10px;
+  color: #0c1003;
+}
+
+#beverages-table th {
+  background-color: #a5be56;
+  color: white;
+}
+
+#beverages-table tr:nth-child(odd) {
+  background-color: #fce198;
+}
+
+#beverages-table tr:nth-child(even) {
+  background-color: #d9cd65;
 }
