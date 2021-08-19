@@ -33,7 +33,123 @@
       </nav>
 
       <section id="body">
-        <div></div>
+        <form id="contact-form" onsubmit="false">
+          <div class="form-row">
+            <div class="form-group col">
+              <label for="name">Name:</label>
+            </div>
+            <div class="form-group col">
+              <input type="text" id="name" name="name" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col">
+              <label for="email">Email:</label>
+            </div>
+            <div class="form-group col">
+              <input type="text" id="email" name="email" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col">
+              <label for="phone">Phone:</label>
+            </div>
+            <div class="form-group col">
+              <input type="text" id="phone" name="phone" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col">
+              <label>Reason for Inquiry:</label>
+            </div>
+            <div class="form-group col">
+              <select id="dropdown" name="dropdown">
+                <option value="catering" default>Catering</option>
+                <option value="privateParty">Private Party</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col">
+              <label>Additional Information:</label>
+            </div>
+            <div class="form-group col">
+              <textarea id="info" name="info"></textarea>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col">
+              <label>Have you been to the restaurant?</label>
+            </div>
+            <div class="form-group col">
+              <input type="radio" name="visted" id="radioNo" value="no" />
+              <label for="radioNo">No</label>
+              <input type="radio" name="visted" id="radioYes" value="yes" />
+              <label for="radioNo">Yes</label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col">
+              <label>Best days to contact you:</label>
+            </div>
+            <div class="form-group col">
+              <input
+                type="checkbox"
+                name="weekday"
+                class="weekday"
+                id="monday"
+                value="monday"
+              />
+              <label for="monday">M</label>
+              <input
+                type="checkbox"
+                name="weekday"
+                class="weekday"
+                id="tuesday"
+                value="tuesday"
+              />
+              <label for="tuesday">T</label>
+              <input
+                type="checkbox"
+                name="weekday"
+                class="weekday"
+                id="wednesday"
+                value="wednesday"
+              />
+              <label for="wednesday">W</label>
+              <input
+                type="checkbox"
+                name="weekday"
+                class="weekday"
+                id="thursday"
+                value="thursday"
+              />
+              <label for="thursday">Th</label>
+              <input
+                type="checkbox"
+                name="weekday"
+                class="weekday"
+                id="friday"
+                value="friday"
+              />
+              <label for="friday">F</label>
+            </div>
+          </div>
+
+          <div>
+            <button type="submit" class="btn btn-secondary">
+              Send Request
+            </button>
+          </div>
+        </form>
       </section>
 
       <footer style="background-color: cornflowerblue; color: white">
