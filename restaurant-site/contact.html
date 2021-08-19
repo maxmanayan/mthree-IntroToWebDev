@@ -16,6 +16,46 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./styles/restaurantStyles.css" />
+    <style>
+      .label-container {
+        text-align: right;
+      }
+      .label-container label {
+        color: #0c1003;
+        padding-right: 10px;
+        font-weight: bold;
+      }
+      .text-input-container input {
+        width: 300px;
+        padding: 0 5px;
+      }
+      .text-input-container textarea {
+        width: 300px;
+        height: 150px;
+        padding: 0 5px;
+        resize: none;
+      }
+      .visited-label {
+        margin-right: 10px;
+      }
+      .weekday-label {
+        margin-right: 10px;
+      }
+      #dropdown {
+        font-size: 1.1em;
+        padding: 5px;
+      }
+      #form-button-container {
+        display: flex;
+        justify-content: center;
+      }
+      #form-button-container .btn {
+        background-color: #71872f;
+        color: white;
+        border: none;
+        padding: 0.75em 1.5em;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -36,37 +76,37 @@
       <section id="body">
         <form id="contact-form" onsubmit="false">
           <div class="form-row">
-            <div class="form-group col">
+            <div class="form-group col-4 label-container">
               <label for="name">Name:</label>
             </div>
-            <div class="form-group col">
+            <div class="form-group col-8 text-input-container">
               <input type="text" id="name" name="name" />
             </div>
           </div>
 
           <div class="form-row">
-            <div class="form-group col">
+            <div class="form-group col-4 label-container">
               <label for="email">Email:</label>
             </div>
-            <div class="form-group col">
+            <div class="form-group col-8 text-input-container">
               <input type="text" id="email" name="email" />
             </div>
           </div>
 
           <div class="form-row">
-            <div class="form-group col">
+            <div class="form-group col-4 label-container">
               <label for="phone">Phone:</label>
             </div>
-            <div class="form-group col">
+            <div class="form-group col-8 text-input-container">
               <input type="text" id="phone" name="phone" />
             </div>
           </div>
 
           <div class="form-row">
-            <div class="form-group col">
+            <div class="form-group col-4 label-container">
               <label>Reason for Inquiry:</label>
             </div>
-            <div class="form-group col">
+            <div class="form-group col-8">
               <select id="dropdown" name="dropdown">
                 <option value="catering" default>Catering</option>
                 <option value="privateParty">Private Party</option>
@@ -77,78 +117,71 @@
           </div>
 
           <div class="form-row">
-            <div class="form-group col">
+            <div class="form-group col-4 label-container">
               <label>Additional Information:</label>
             </div>
-            <div class="form-group col">
+            <div class="form-group col-8 text-input-container">
               <textarea id="info" name="info"></textarea>
             </div>
           </div>
 
           <div class="form-row">
-            <div class="form-group col">
+            <div class="form-group col-4 label-container">
               <label>Have you been to the restaurant?</label>
             </div>
-            <div class="form-group col">
-              <input type="radio" name="visted" id="radioNo" value="no" />
-              <label for="radioNo">No</label>
-              <input type="radio" name="visted" id="radioYes" value="yes" />
-              <label for="radioNo">Yes</label>
+            <div class="form-group col-8">
+              <input type="radio" name="visited" id="radioNo" value="no" />
+              <label class="visited-label" for="radioNo">No</label>
+              <input type="radio" name="visited" id="radioYes" value="yes" />
+              <label class="visited-label" for="radioNo">Yes</label>
             </div>
           </div>
 
           <div class="form-row">
-            <div class="form-group col">
+            <div class="form-group col-4 label-container">
               <label>Best days to contact you:</label>
             </div>
-            <div class="form-group col">
+            <div class="form-group col-8">
               <input
                 type="checkbox"
                 name="weekday"
-                class="weekday"
                 id="monday"
                 value="monday"
               />
-              <label for="monday">M</label>
+              <label class="weekday-label" for="monday">M</label>
               <input
                 type="checkbox"
                 name="weekday"
-                class="weekday"
                 id="tuesday"
                 value="tuesday"
               />
-              <label for="tuesday">T</label>
+              <label class="weekday-label" for="tuesday">T</label>
               <input
                 type="checkbox"
                 name="weekday"
-                class="weekday"
                 id="wednesday"
                 value="wednesday"
               />
-              <label for="wednesday">W</label>
+              <label class="weekday-label" for="wednesday">W</label>
               <input
                 type="checkbox"
                 name="weekday"
-                class="weekday"
                 id="thursday"
                 value="thursday"
               />
-              <label for="thursday">Th</label>
+              <label class="weekday-label" for="thursday">Th</label>
               <input
                 type="checkbox"
                 name="weekday"
-                class="weekday"
                 id="friday"
                 value="friday"
               />
-              <label for="friday">F</label>
+              <label class="weekday-label" for="friday">F</label>
             </div>
           </div>
 
-          <div>
-            <button type="submit" class="btn btn-secondary">
-              Send Request
-            </button>
+          <div id="form-button-container">
+            <button type="submit" class="btn">Send Request</button>
           </div>
         </form>
       </section>
