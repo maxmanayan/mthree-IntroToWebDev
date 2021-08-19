@@ -1,6 +1,10 @@
+#beverages {
+  margin: 20px auto;
+}
+
 #beverages-table {
   width: 50%;
-  margin: 20px auto;
+  margin: 10px auto;
 }
 
 #beverages-table th,
@@ -9,6 +13,7 @@ td {
   border-collapse: collapse;
   padding: 10px;
   color: #0c1003;
+  font-size: 1.1em;
 }
 
 #beverages-table th {
@@ -16,10 +21,10 @@ td {
   color: white;
 }
 
-#beverages-table tr:nth-child(odd) {
+#beverages-table tr:nth-child(even) {
   background-color: #fce198;
 }
 
-#beverages-table tr:nth-child(even) {
+#beverages-table tr:nth-child(odd) {
   background-color: #d9cd65;
 }
