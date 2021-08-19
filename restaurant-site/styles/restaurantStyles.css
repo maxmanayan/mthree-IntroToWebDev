@@ -30,6 +30,11 @@ nav {
   height: 70px;
 }
 
+nav .btn {
+  background-color: #a5be56;
+  color: white;
+}
+
 footer {
   background-color: #a5be56;
   color: #0c1003;
