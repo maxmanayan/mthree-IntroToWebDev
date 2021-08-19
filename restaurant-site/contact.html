@@ -67,6 +67,18 @@
         padding: 0.75em 1.5em;
         font-weight: bold;
       }
+      #submit-success {
+        margin: 20px auto;
+        border-radius: 10px;
+        text-align: center;
+        width: fit-content;
+        background-color: #71872fb7;
+        display: none;
+      }
+      #submit-success p {
+        color: white;
+        padding: 10px;
+      }
       #contents {
         margin: 50px 0;
       }
@@ -202,6 +214,10 @@
 
           <div id="form-button-container">
             <button type="submit" class="btn">Send Request</button>
+          </div>
+
+          <div id="submit-success">
+            <p>Request Sent! Our team will get back to you as soon as possible!</p>
           </div>
         </form>
       </section>
