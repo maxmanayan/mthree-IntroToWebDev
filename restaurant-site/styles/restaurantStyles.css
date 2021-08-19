@@ -53,6 +53,27 @@ footer {
   padding: 30px 0;
 }
 
+.link {
+  color: #da5117;
+  text-decoration: underline;
+}
+
+.link:visited {
+  color: #5c1c02;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #da5117;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.link:active {
+  color: #da5117;
+  text-decoration: none;
+}
+
 #page-header {
   padding: 1em 5px 0 5px;
   display: flex;
