@@ -28,11 +28,20 @@ nav {
   border-bottom: 1px solid #0c1003;
   background-color: #f7da83d3;
   height: 70px;
+
+  padding: 15px 0 0 10px;
 }
 
 nav .btn {
   background-color: #a5be56;
   color: white;
+  margin-right: 10px;
+}
+
+nav .btn:hover {
+  background-color: white;
+  color: #a5be56;
+  margin-right: 10px;
 }
 
 footer {
