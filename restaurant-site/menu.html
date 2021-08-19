@@ -18,11 +18,18 @@
     <link rel="stylesheet" href="./styles/restaurantStyles.css" />
 
     <style>
-      .col {
+      .menu-item {
         text-align: center;
       }
-      #contents {
+      .menu-item .dish {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+      #menu {
         margin-top: 20px;
+        background-color: #d9cd65;
+        padding: 3em;
+        border-radius: 10px;
       }
     </style>
   </head>
@@ -42,26 +49,26 @@
         <a class="btn badge-pill" href="./contact.html">Contact Us</a>
       </nav>
 
-      <section id="contents">
+      <section id="menu">
         <div class="row">
-          <div class="col">
-            <p>Chicken Tacos</p>
+          <div class="col-md-4 col-sm-12 menu-item">
+            <p class="dish">Chicken Tacos</p>
             <p>
               Three delicious local-chicken tacos with your choice of toppings.
               Comes with chips, salad, and a drink.
             </p>
             <p>$5.00</p>
           </div>
-          <div class="col">
-            <p>Asada Tacos</p>
+          <div class="col-md-4 col-sm-12 menu-item">
+            <p class="dish">Asada Tacos</p>
             <p>
               Three delicious grass-fed steak tacos with your choice of
               toppings. Comes with chips, salad, and a drink.
             </p>
             <p>$7.00</p>
           </div>
-          <div class="col">
-            <p>Pulled-Pork Tacos</p>
+          <div class="col-md-4 col-sm-12 menu-item">
+            <p class="dish">Pulled-Pork Tacos</p>
             <p>
               Three delicious smoked pork tacos with your choice of toppings.
               Comes with chips, salad, and a drink.
@@ -70,24 +77,24 @@
           </div>
         </div>
         <div class="row">
-          <div class="col">
-            <p>Chorizo Tacos</p>
+          <div class="col-md-4 col-sm-12 menu-item">
+            <p class="dish">Chorizo Tacos</p>
             <p>
               Three delicious house-recipe chorizo tacos with your choice of
               toppings. Comes with chips, salad, and a drink.
             </p>
             <p>$6.00</p>
           </div>
-          <div class="col">
-            <p>Fish Tacos</p>
+          <div class="col-md-4 col-sm-12 menu-item">
+            <p class="dish">Fish Tacos</p>
             <p>
               Three delicious fresh-caught mahi tacos with your choice of
               toppings. Comes with chips, salad, and a drink.
             </p>
             <p>$7.00</p>
           </div>
-          <div class="col">
-            <p>Vegetarian Tacos</p>
+          <div class="col-md-4 col-sm-12 menu-item">
+            <p class="dish">Vegetarian Tacos</p>
             <p>
               Three delicious black bean tacos with your choice of toppings.
               Comes with chips, salad, and a drink.
@@ -95,6 +102,35 @@
             <p>$4.00</p>
           </div>
         </div>
+      </section>
+
+      <section id="beverages">
+        <table>
+          <thead>
+            <tr>
+              <th>Beverages</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Jarritos</td>
+              <td>$4.00</td>
+            </tr>
+            <tr>
+              <td>Lemonade</td>
+              <td>$3.00</td>
+            </tr>
+            <tr>
+              <td>Coffee</td>
+              <td>$2.00</td>
+            </tr>
+            <tr>
+              <td>Iced Tea</td>
+              <td>$1.25</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
       <footer>
