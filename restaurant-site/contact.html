@@ -50,8 +50,10 @@
         padding: 5px;
       }
       #form-button-container {
+        width: 400px;
+        margin:auto;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
       }
       #form-button-container .btn {
         background-color: #71872f;
@@ -63,6 +65,20 @@
       #form-button-container .btn:hover {
         background-color: white;
         color: #71872f;
+        border: none;
+        padding: 0.75em 1.5em;
+        font-weight: bold;
+      }
+      #form-button-container .reset {
+        background-color: white;
+        color: #71872f;
+        border: none;
+        padding: 0.75em 1.5em;
+        font-weight: bold;
+      }
+      #form-button-container .reset:hover {
+        background-color: #71872f;
+        color: white;
         border: none;
         padding: 0.75em 1.5em;
         font-weight: bold;
@@ -102,7 +118,7 @@
     </nav>
     <div class="container">
       <section id="contents">
-        <form id="contact-form" onsubmit="return checkRequired()">
+        <form id="contact-form" onsubmit="return checkRequired()" onreset="resetForm()">
           <div class="form-row">
             <div class="form-group col-4 label-container">
               <label for="name">Name:</label>
@@ -214,6 +230,7 @@
 
           <div id="form-button-container">
             <button type="submit" class="btn">Send Request</button>
+            <button type="reset" class="btn reset">Reset</button>
           </div>
 
           <div id="submit-success">

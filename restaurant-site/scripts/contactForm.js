@@ -21,3 +21,8 @@ function checkRequired() {
 
   return false;
 }
+
+function resetForm() {
+  invalidEmail.style.display = "none";
+  successMessage.style.display = "none";
+}
