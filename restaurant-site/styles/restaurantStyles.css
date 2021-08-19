@@ -46,6 +46,12 @@ nav .btn:hover {
   margin-right: 10px;
 }
 
+nav #active-button {
+  background-color: white;
+  color: #a5be56;
+  margin-right: 10px;
+}
+
 footer {
   background-color: #a5be56;
   text-align: center;
