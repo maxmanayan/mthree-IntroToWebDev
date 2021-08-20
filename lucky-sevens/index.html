@@ -16,7 +16,7 @@
     </header>
 
     <section>
-      <form id="betting-form">
+      <form id="betting-form" onsubmit="return validateBet()">
         <div id="betting-container">
           <label for="starting-bet">Starting Bet:</label>
           <div id="betting-input">
@@ -29,6 +29,9 @@
             />
             <span>.00</span>
           </div>
+        </div>
+        <div id="error-message">
+          <p>*You must bet at least $1.00 to play!*</p>
         </div>
         <div id="button-container">
           <button type="submit" id="play-button">Play</button>
@@ -61,5 +64,7 @@
         </tbody>
       </table>
     </section>
+
+    <script type="text/JavaScript" src="./scripts.js"></script>
   </body>
 </html>

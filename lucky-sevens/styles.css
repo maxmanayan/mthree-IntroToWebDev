@@ -34,6 +34,11 @@ header h1 {
   justify-content: center;
 }
 
+#error-message {
+  color: red;
+  display: none;
+}
+
 #play-button {
   margin: 10px auto;
   padding: 5px 10px;
@@ -42,6 +47,7 @@ header h1 {
 
 #res-table {
   margin: 20px auto;
+  display: none;
 }
 
 #res-table caption {
