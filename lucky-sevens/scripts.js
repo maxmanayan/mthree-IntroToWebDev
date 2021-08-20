@@ -21,7 +21,6 @@ function validateBet() {
   } else {
     playSevens(bet);
   }
-
   return false;
 }
 
@@ -39,22 +38,14 @@ function playSevens(bet) {
   let gameMoney = bet;
   const totalMoney = [];
 
-  console.log("before game totalMoney", totalMoney);
-
   while (gameMoney > 0) {
     rollDice();
-
     if (diceSum === 7) {
-      console.log("we rolled a 7!");
       gameMoney += 4;
     } else {
       gameMoney -= 1;
     }
-
     totalMoney.push(gameMoney);
-    console.log(
-      `You rolled a ${diceSum}, your total money is now ${gameMoney}`
-    );
   }
 
   if (gameMoney === 0) {
@@ -73,10 +64,7 @@ function rollDice() {
 
 // Displays results table
 function displayResults(totalMoney) {
-  console.log("totalMoney", totalMoney);
-
   resultsTable.style.display = "block";
-
   resultsStartingBet.innerText = `$${startingBet.value}.00`;
   resultsTotalRolls.innerText = `${totalMoney.length}`;
   resultsHighestAmount.innerText = `$${Math.max(...totalMoney)}.00`;
