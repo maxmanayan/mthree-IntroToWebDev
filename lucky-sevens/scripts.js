@@ -80,3 +80,10 @@ function displayResults(totalMoney) {
     totalMoney.indexOf(Math.max(...totalMoney)) + 1
   }`;
 }
+
+// Resets the game
+function resetGame() {
+  errorMessage.style.display = "none";
+  resultsTable.style.display = "none";
+  startingBet.innerText = null;
+}

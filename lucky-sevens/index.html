@@ -16,7 +16,11 @@
     </header>
 
     <section>
-      <form id="betting-form" onsubmit="return validateBet()">
+      <form
+        id="betting-form"
+        onsubmit="return validateBet()"
+        onreset="resetGame()"
+      >
         <div id="betting-container">
           <label for="starting-bet">Starting Bet:</label>
           <div id="betting-input">
@@ -35,6 +39,7 @@
         </div>
         <div id="button-container">
           <button type="submit" id="play-button">Play</button>
+          <button type="reset" id="reset-button">Reset</button>
         </div>
       </form>
     </section>
