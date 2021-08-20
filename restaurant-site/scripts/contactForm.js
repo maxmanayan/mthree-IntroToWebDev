@@ -9,6 +9,7 @@ const contactEmail = document.getElementById("email");
 const successMessage = document.getElementById("submit-success");
 const invalidEmail = document.getElementById("email-validation-error");
 
+// Validation Function
 function checkRequired() {
   const emailToCheck = contactEmail.value;
 
@@ -28,6 +29,7 @@ function checkRequired() {
   return false;
 }
 
+// Reset Function
 function resetForm() {
   invalidEmail.style.display = "none";
   successMessage.style.display = "none";

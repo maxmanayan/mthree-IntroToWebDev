@@ -5,7 +5,7 @@
   Assignment: Restaurant Site
   Submitted: August 2021
  -->
- 
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -129,11 +129,15 @@
         >Contact Us</a
       >
     </nav>
+
     <div class="container">
+      <!-- If user does not have JS enabled, this message will display -->
       <noscript>
         <p>You must enable JavaScript to fully use this site!</p>
       </noscript>
+
       <section id="contents">
+        <!-- Contact Form Start -->
         <form id="contact-form" onsubmit="return checkRequired()" onreset="resetForm()">
           <div class="form-row">
             <div class="form-group col-4 label-container">
@@ -248,13 +252,16 @@
             <button type="submit" class="btn">Send Request</button>
             <button type="reset" class="btn reset">Reset</button>
           </div>
+          <!-- Contact Form End -->
 
+          <!-- Message displays if all required fields valid and form 'submits' -->
           <div id="submit-success">
             <p>Request Sent! Our team will get back to you as soon as possible!</p>
           </div>
         </form>
       </section>
     </div>
+    
     <footer>
       <p>120 State St, West Valley, TN, 37055</p>
       <p>+1 (615)-555-7460</p>
