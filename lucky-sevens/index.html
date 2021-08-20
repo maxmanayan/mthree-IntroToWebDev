@@ -8,8 +8,58 @@
 <html lang="en">
   <head>
     <title>Lucky Sevens</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <h1>Lucky Sevens</h1>
+    <header>
+      <h1>Lucky Sevens</h1>
+    </header>
+
+    <section>
+      <form>
+        <div>
+          <label for="starting-bet">Starting Bet:</label>
+          <div>
+            <span>$</span>
+            <input
+              id="starting-bet"
+              name="starting-bet"
+              type="number"
+              placeholder="0"
+            />
+            <span>.00</span>
+          </div>
+        </div>
+        <div>
+          <button>Play</button>
+        </div>
+      </form>
+    </section>
+
+    <section>
+      <table id="res-table">
+        <caption>
+          Results
+        </caption>
+        <tbody>
+          <tr>
+            <td>Starting Bet</td>
+            <td id="res-starting-bet"></td>
+          </tr>
+          <tr>
+            <td>Total Rolls Before Going Broke</td>
+            <td id="res-total-rolls"></td>
+          </tr>
+          <tr>
+            <td>Highest Amount Won</td>
+            <td id="res-highest-amount"></td>
+          </tr>
+          <tr>
+            <td>Roll Count at Highest Amount Won</td>
+            <td id="res-roll-at-highest"></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
   </body>
 </html>
