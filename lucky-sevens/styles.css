@@ -8,3 +8,34 @@ body {
 header h1 {
   font-size: 3em;
 }
+
+#betting-form {
+  margin: 20px auto;
+}
+
+#betting-container {
+  display: flex;
+  align-items: center;
+}
+
+#betting-container label {
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-right: 3em;
+}
+
+#starting-bet {
+  font-size: 1.2em;
+  width: 3em;
+}
+
+#button-container {
+  display: flex;
+  justify-content: center;
+}
+
+#play-button {
+  margin: 10px auto;
+  padding: 5px 10px;
+  font-size: 1.2em;
+}
