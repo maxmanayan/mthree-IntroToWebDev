@@ -55,7 +55,6 @@ function playSevens(bet) {
     displayResults();
   }
 
-  console.log("totalMoney", totalMoney);
   return false;
 }
 
@@ -66,6 +65,16 @@ function rollDice() {
   diceSum = die1 + die2;
 }
 
+// Displays results table
 function displayResults() {
+  console.log("totalMoney", totalMoney);
+
   resultsTable.style.display = "block";
+
+  resultsStartingBet.innerText = `$${startingBet.value}.00`;
+  resultsTotalRolls.innerText = `${totalMoney.length}`;
+  resultsHighestAmount.innerText = `$${Math.max(...totalMoney)}.00`;
+  resultsRollAtHighest.innerText = `${
+    totalMoney.indexOf(Math.max(...totalMoney)) + 1
+  }`;
 }
