@@ -1,3 +1,7 @@
+// Creator: Max Manayan
+// Assignment: Lucky Sevens
+// Submitted: August 2021
+
 const startingBet = document.getElementById("starting-bet");
 const errorMessage = document.getElementById("error-message");
 
