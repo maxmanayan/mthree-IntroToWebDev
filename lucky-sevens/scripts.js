@@ -7,7 +7,6 @@ const resultsTotalRolls = document.getElementById("res-total-rolls");
 const resultsHighestAmount = document.getElementById("res-highest-amount");
 const resultsRollAtHighest = document.getElementById("res-roll-at-highest");
 
-const totalMoney = [];
 let diceSum = 0;
 
 // Is called after the 'Play' button is clicked
@@ -34,6 +33,9 @@ function playSevens(bet) {
   resultsTable.style.display = "none";
 
   let gameMoney = bet;
+  const totalMoney = [];
+
+  console.log("before game totalMoney", totalMoney);
 
   while (gameMoney > 0) {
     rollDice();
@@ -52,7 +54,7 @@ function playSevens(bet) {
   }
 
   if (gameMoney === 0) {
-    displayResults();
+    displayResults(totalMoney);
   }
 
   return false;
@@ -66,7 +68,7 @@ function rollDice() {
 }
 
 // Displays results table
-function displayResults() {
+function displayResults(totalMoney) {
   console.log("totalMoney", totalMoney);
 
   resultsTable.style.display = "block";
