@@ -1,3 +1,9 @@
+/* 
+Creator: Max Manayan
+Assignment: Restaurant Site
+Submitted: August 2021
+*/
+
 const contactName = document.getElementById("name");
 const contactEmail = document.getElementById("email");
 const successMessage = document.getElementById("submit-success");
