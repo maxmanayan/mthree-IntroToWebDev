@@ -37,9 +37,11 @@ header h1 {
 }
 
 #button-container button {
-  margin: 10px auto;
-  padding: 5px 10px;
+  margin: 15px auto;
+  padding: 7px 12px;
   font-size: 1.2em;
+  color: white;
+  border: none;
 }
 
 #play-button {
@@ -47,17 +49,25 @@ header h1 {
 }
 
 #reset-button {
-  background-color: red;
+  background-color: #e93317;
 }
 
 #error-message {
-  color: red;
   display: none;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+
+#error-message p {
+  padding: 5px;
+  color: #e93317;
 }
 
 #res-table {
   margin: 20px auto;
   display: none;
+  background-color: ;
 }
 
 #res-table caption {
