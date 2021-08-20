@@ -34,10 +34,18 @@ header h1 {
   justify-content: center;
 }
 
-#play-button {
+#button-container button {
   margin: 10px auto;
   padding: 5px 10px;
   font-size: 1.2em;
+}
+
+#play-button {
+  background-color: green;
+}
+
+#reset-button {
+  background-color: red;
 }
 
 #error-message {
