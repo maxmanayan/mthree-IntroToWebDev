@@ -1,6 +1,12 @@
 const startingBet = document.getElementById("starting-bet");
 const errorMessage = document.getElementById("error-message");
 
+const resultsTable = document.getElementById("res-table");
+const resultsStartingBet = document.getElementById("res-starting-bet");
+const resultsTotalRolls = document.getElementById("res-total-rolls");
+const resultsHighestAmount = document.getElementById("res-highest-amount");
+const resultsRollAtHighest = document.getElementById("res-roll-at-highest");
+
 const totalMoney = [];
 let diceSum = 0;
 
@@ -25,6 +31,7 @@ function displayError() {
 // The highest order function for game mechanics
 function playSevens(bet) {
   errorMessage.style.display = "none";
+  resultsTable.style.display = "none";
 
   let gameMoney = bet;
 
@@ -44,6 +51,10 @@ function playSevens(bet) {
     );
   }
 
+  if (gameMoney === 0) {
+    displayResults();
+  }
+
   console.log("totalMoney", totalMoney);
   return false;
 }
@@ -55,4 +66,6 @@ function rollDice() {
   diceSum = die1 + die2;
 }
 
-function displayResults() {}
+function displayResults() {
+  resultsTable.style.display = "block";
+}
