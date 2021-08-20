@@ -31,24 +31,29 @@
         padding: 3em;
         border-radius: 10px;
       }
-      /* #carousel {
-        background-color: red;
-      } */
-      #carousel-slide-1 {
+      #carousel {
+        margin: 30px auto;
+      }
+      .carousel-slide {
         background-color: teal;
-        width: 600px;
+        width: 100%;
         height: 300px;
         margin: auto;
+        padding: 3em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
       #carousel-slide-2 {
         background-color: violet;
-        width: 600px;
+        width: 100%;
         height: 300px;
         margin: auto;
       }
       #carousel-slide-3 {
         background-color: lime;
-        width: 600px;
+        width: 100%;
         height: 300px;
         margin: auto;
       }
@@ -153,18 +158,21 @@
       <div id="carousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div id="carousel-slide-1">
-              <h2>One</h2>
+            <div class="carousel-slide" id="slide-1">
+              <h2>Tico's Tacos is Opening a Second Location!</h2>
+              <h3>It will be located at 276 Main St, West Valley, TN, 37055!</h3>
             </div>
           </div>
           <div class="carousel-item">
-            <div id="carousel-slide-2">
+            <div class="carousel-slide" id="slide-2">
               <h2>Two</h2>
             </div>
           </div>
           <div class="carousel-item">
-            <div id="carousel-slide-3">
-              <h2>Three</h2>
+            <div class="carousel-slide" id="slide-3">
+              <h2>Drink of the Month:</h2>
+              <h3>TSG Special Brew</h3>
+              <h3>$5.00</h3>
             </div>
           </div>
         </div>
