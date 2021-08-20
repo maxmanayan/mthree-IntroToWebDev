@@ -42,14 +42,26 @@ header h1 {
   font-size: 1.2em;
   color: white;
   border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 #play-button {
   background-color: green;
 }
 
+#play-button:hover {
+  background-color: white;
+  color: green;
+}
+
 #reset-button {
   background-color: #e93317;
+}
+
+#reset-button:hover {
+  background-color: white;
+  color: #e93317;
 }
 
 #error-message {
@@ -67,23 +79,23 @@ header h1 {
 #res-table {
   margin: 20px auto;
   display: none;
-  background-color: ;
+  background-color: #790b0c;
 }
 
 #res-table caption {
   font-size: 3em;
   font-weight: bold;
-  border-top: 1px solid black;
+  border-top: 1px solid white;
   margin: 10px auto;
 }
 
 #res-table,
 #res-table td {
-  border: 1px solid black;
+  border: 1px solid white;
   border-collapse: collapse;
   padding: 5px 10px 5px 5px;
 }
 
-#res-table tr:nth-child(even) {
-  background-color: lightgray;
+#res-table tr:nth-child(odd) {
+  background-color: darkred;
 }
